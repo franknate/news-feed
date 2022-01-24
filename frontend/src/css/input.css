@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .search-term {
+        @apply bg-gray-400 hover:bg-gray-500 m-1 px-3 py-1 text-sm rounded-full;
+    }
+    .remove-icon {
+        @apply text-gray-600 ml-1 text-xs;
+    }
+    .article {
+        @apply sm:w-5/6 md:w-4/6 lg:w-3/6 m-2 p-2 flex justify-between border-2 rounded hover:shadow-md;
+    }
+    .article > div {
+        @apply pr-3 flex flex-col justify-between font-bold;
+    }
+    .article p {
+        @apply text-gray-700 font-light;
+    }
+    
+}
