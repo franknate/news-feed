@@ -15,7 +15,7 @@ const config = {
   puppeteerArgs: [],
 };
 
-type Article = {
+export type Article = {
   title: string;
   link: string;
   image: string;
@@ -35,7 +35,7 @@ function formatTime({
   return { title, link, image, source, time };
 }
 
-function filterAndSort(articles: Article[]): Article[] {
+export function filterAndSort(articles: Article[]): Article[] {
   return articles
     .filter((a) => Object.values(a).every((v) => v))
     .map((a) => formatTime(a))
